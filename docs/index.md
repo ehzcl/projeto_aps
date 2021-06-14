@@ -8,5 +8,5 @@ Este projeto visa aplicar ao máximo o conhecimento adquirido na disciplina, afi
 
 ### Milestones
 
-[definição do time e escopo do projeto](./escopo)
+[Definição do time e escopo do projeto](https://docs.google.com/document/d/17RXGTigwaIQsoJafAuFN54eFfRCHrjHxu_DlcEcw50U/edit?usp=sharing)
 
