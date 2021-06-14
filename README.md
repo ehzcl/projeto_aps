@@ -4,7 +4,9 @@ Projeto para a disciplina IF718 - Análise e Projeto de Sistemas
 ### Equipe
 
 Ewerton Lima   - ehzcl
+
 Luan Advincula - lssa
+
 Paulo Aragão   - pvsa
 
 ### Diagrama
