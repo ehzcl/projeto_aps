@@ -1,0 +1,2 @@
+package br.ufpe.cin.if718.eshop.comunicacao;public class LoginController {
+}
