@@ -1,6 +1,6 @@
-package br.ufpe.cin.if718.dados;
+package br.ufpe.cin.if718.eshop.dados;
 
-import br.ufpe.cin.if718.negocio.Cliente;
+import br.ufpe.cin.if718.eshop.negocio.Cliente;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -17,11 +17,23 @@ public class RepositorioClientesBDR implements IRepositorioClientes {
 
     @Override
     public Cliente existeCliente(String email, String senha) {
-        return null;
+        Cliente c = null;
+        Iterable<Cliente> it = repositorioClientes.findAll();
+        for (Cliente cliente : it) {
+            if (cliente.getEmail().equals(email) && cliente.getSenha().equals(senha)) {
+                c = cliente;
+            }
+        }
+        return c;
     }
 
     @Override
     public void adicionarFavorito(Long idCliente, Long idProduto) {
 
+    }
+
+    @Override
+    public Iterable<Cliente> getAll() {
+        return repositorioClientes.findAll();
     }
 }

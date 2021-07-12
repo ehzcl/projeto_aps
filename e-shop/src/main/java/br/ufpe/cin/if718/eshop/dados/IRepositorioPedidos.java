@@ -1,4 +1,4 @@
-package br.ufpe.cin.if718.dados;
+package br.ufpe.cin.if718.eshop.dados;
 
 public interface IRepositorioPedidos {
 }

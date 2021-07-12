@@ -1,4 +1,4 @@
-package br.ufpe.cin.if718.negocio;
+package br.ufpe.cin.if718.eshop.negocio;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -23,6 +23,8 @@ public class Cliente {
         this.senha = senha;
         this.telefone = telefone;
     }
+
+    public Cliente() {}
 
     public Long getIdCliente() {
         return idCliente;

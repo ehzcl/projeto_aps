@@ -1,4 +1,4 @@
-package br.ufpe.cin.if718.negocio;
+package br.ufpe.cin.if718.eshop.negocio;
 
 public class Carrinho {
     private Integer idCliente;

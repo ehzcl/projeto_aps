@@ -1,6 +1,6 @@
-package br.ufpe.cin.if718.dados;
+package br.ufpe.cin.if718.eshop.dados;
 
-import br.ufpe.cin.if718.negocio.Cliente;
+import br.ufpe.cin.if718.eshop.negocio.Cliente;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

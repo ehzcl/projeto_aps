@@ -1,20 +1,21 @@
-package br.ufpe.cin.if718.comunicacao;
+package br.ufpe.cin.if718.eshop.comunicacao;
 
-import br.ufpe.cin.if718.negocio.Cliente;
-import br.ufpe.cin.if718.negocio.Fachada;
+import br.ufpe.cin.if718.eshop.negocio.Cliente;
+import br.ufpe.cin.if718.eshop.negocio.Fachada;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.*;
 
-@Controller
+@RestController
 public class CadastroController {
     @Autowired
     private Fachada fachada;
 
-    @PostMapping("/cliente/cadastrar")
-    public void cadastrarCliente(@RequestBody Cliente cliente) {
+    @PostMapping("/cadastrar")
+    public ResponseEntity cadastrarCliente(@RequestBody Cliente cliente) {
         fachada.cadastrarCliente(cliente);
-        System.out.println("Cliente cadastrado.");
+        return ResponseEntity.ok(HttpStatus.OK);
     }
 }

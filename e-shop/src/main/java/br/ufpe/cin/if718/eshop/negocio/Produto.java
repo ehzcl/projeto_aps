@@ -1,4 +1,4 @@
-package br.ufpe.cin.if718.negocio;
+package br.ufpe.cin.if718.eshop.negocio;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;

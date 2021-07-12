@@ -1,4 +1,4 @@
-package br.ufpe.cin.if718.negocio;
+package br.ufpe.cin.if718.eshop.negocio;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -11,5 +11,13 @@ public class ControladorCliente {
 
     public void cadastrarCliente(Cliente cliente) {
         cadastroClientes.inserirCliente(cliente);
+    }
+
+    public void efetuarLogin(String email, String senha) {
+        cadastroClientes.existeCliente(email, senha);
+    }
+
+    public Iterable<Cliente> getAll() {
+        return cadastroClientes.getAll();
     }
 }

@@ -1,6 +1,6 @@
-package br.ufpe.cin.if718.negocio;
+package br.ufpe.cin.if718.eshop.negocio;
 
-import br.ufpe.cin.if718.dados.IRepositorioClientes;
+import br.ufpe.cin.if718.eshop.dados.IRepositorioClientes;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -12,5 +12,13 @@ public class CadastroClientes {
 
     public void inserirCliente(Cliente cliente) {
         repositorioClientes.inserirCliente(cliente);
+    }
+
+    public Cliente existeCliente(String email, String senha) {
+        return repositorioClientes.existeCliente(email, senha)
+    }
+
+    public Iterable<Cliente> getAll() {
+        return repositorioClientes.getAll();
     }
 }
