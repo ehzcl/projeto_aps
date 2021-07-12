@@ -3,6 +3,8 @@ package br.ufpe.cin.if718.eshop.negocio;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.util.List;
+
 @Component
 public class ControladorCliente {
 
@@ -13,11 +15,11 @@ public class ControladorCliente {
         cadastroClientes.inserirCliente(cliente);
     }
 
-    public void efetuarLogin(String email, String senha) {
-        cadastroClientes.existeCliente(email, senha);
+    public Cliente buscarCredencial(String email) {
+        return cadastroClientes.existeCliente(email);
     }
 
-    public Iterable<Cliente> getAll() {
-        return cadastroClientes.getAll();
+    public List<Cliente> listarTodosClientes() {
+        return cadastroClientes.listarTodosClientes();
     }
 }

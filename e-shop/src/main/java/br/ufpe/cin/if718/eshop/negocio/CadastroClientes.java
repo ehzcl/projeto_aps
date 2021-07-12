@@ -4,6 +4,8 @@ import br.ufpe.cin.if718.eshop.dados.IRepositorioClientes;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.util.List;
+
 @Component
 public class CadastroClientes {
 
@@ -14,11 +16,11 @@ public class CadastroClientes {
         repositorioClientes.inserirCliente(cliente);
     }
 
-    public Cliente existeCliente(String email, String senha) {
-        return repositorioClientes.existeCliente(email, senha)
+    public Cliente existeCliente(String email) {
+        return repositorioClientes.existeCliente(email);
     }
 
-    public Iterable<Cliente> getAll() {
-        return repositorioClientes.getAll();
+    public List<Cliente> listarTodosClientes() {
+        return repositorioClientes.listarTodosClientes();
     }
 }

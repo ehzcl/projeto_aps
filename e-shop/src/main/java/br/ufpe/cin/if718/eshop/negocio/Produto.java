@@ -1,12 +1,6 @@
 package br.ufpe.cin.if718.eshop.negocio;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-
 public class Produto {
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long idProduto;
     private String nome;
     private Double valor;
@@ -20,8 +14,16 @@ public class Produto {
         return idProduto;
     }
 
+    public void setIdProduto(Long idProduto) {
+        this.idProduto = idProduto;
+    }
+
     public String getNome() {
         return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public Double getValor() {

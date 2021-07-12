@@ -2,9 +2,10 @@ package br.ufpe.cin.if718.eshop.dados;
 
 import br.ufpe.cin.if718.eshop.negocio.Cliente;
 
+import java.util.List;
+
 public interface IRepositorioClientes {
     public void inserirCliente(Cliente cliente);
-    public Cliente existeCliente(String email, String senha);
-    public void adicionarFavorito(Long idCliente, Long idProduto);
-    public Iterable<Cliente> getAll();
+    public Cliente existeCliente(String email);
+    public List<Cliente> listarTodosClientes();
 }

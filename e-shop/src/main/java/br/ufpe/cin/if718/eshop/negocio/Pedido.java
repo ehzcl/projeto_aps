@@ -1,16 +1,9 @@
 package br.ufpe.cin.if718.eshop.negocio;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
 
 public class Pedido {
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long idPedido;
     private Integer idCliente;
-    @ManyToOne
     private Produto produtos;
     private Integer valorTotal;
 
@@ -22,6 +15,10 @@ public class Pedido {
 
     public Long getIdPedido() {
         return idPedido;
+    }
+
+    public void setIdPedido(Long idPedido) {
+        this.idPedido = idPedido;
     }
 
     public Integer getIdCliente() {

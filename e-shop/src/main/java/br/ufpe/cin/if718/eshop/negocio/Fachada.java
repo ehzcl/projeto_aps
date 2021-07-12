@@ -3,6 +3,8 @@ package br.ufpe.cin.if718.eshop.negocio;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.util.List;
+
 @Component
 public class Fachada {
     @Autowired
@@ -12,11 +14,11 @@ public class Fachada {
         controladorCliente.cadastrarCliente(cliente);
     }
 
-    public void efetuarLogin(String email, String senha) {
-        controladorCliente.efetuarLogin(email, senha);
+    public Cliente buscarCredencial(String email) {
+        return controladorCliente.buscarCredencial(email);
     }
 
-    public Iterable<Cliente> todosClientes() {
-        return controladorCliente.getAll();
+    public List<Cliente> listarTodosClientes() {
+        return controladorCliente.listarTodosClientes();
     }
 }
