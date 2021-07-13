@@ -1,29 +1,22 @@
 package br.ufpe.cin.if718.eshop.negocio;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import javax.persistence.*;
+
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
+@Entity
 public class Carrinho {
-    private Integer idCliente;
-    // private Produto[] produtos;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long idCarrinho;
+    @Autowired
+    private Long idCliente;
+    private Produto[] produtos;
     private Double valorTotal;
-
-    public Carrinho(Integer idCliente, Produto[] produtos, Double valorTotal) {
-        this.idCliente = idCliente;
-        // this.produtos = produtos;
-        this.valorTotal = valorTotal;
-    }
-
-    public Integer getIdCliente() {
-        return idCliente;
-    }
-
-    public void setIdCliente(Integer idCliente) {
-        this.idCliente = idCliente;
-    }
-
-    public Double getValorTotal() {
-        return valorTotal;
-    }
-
-    public void setValorTotal(Double valorTotal) {
-        this.valorTotal = valorTotal;
-    }
 }
