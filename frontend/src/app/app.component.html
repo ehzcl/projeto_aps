@@ -1,0 +1,45 @@
+<!-- PAGINA INICIAL -->
+
+<div class="container">
+  <div class="row">
+    <!-- Login -->
+    <div class="col">
+      <h2>Efetuar Login</h2>
+
+      <div class="form-label-group">
+        <input type="email" id="inputEmailLogin" class="form-control" placeholder="Email" required autofocus>
+      </div>
+
+      <div class="form-label-group">
+        <input type="password" id="inputPasswordLogin" class="form-control" placeholder="Senha" required>
+      </div>
+
+      <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">ENTRAR</button>
+    </div>
+
+    <!-- Cadastrar-se -->
+    <div class="col">
+      <h2>Cadastrar-se</h2>
+
+      <form [formGroup]="registrationForm" (ngSubmit)="signUp()">
+        <div class="form-label-group">
+          <input formControlName="nome" type="text" id="inputName" class="form-group form-control" placeholder="Nome" required>
+        </div>
+
+        <div class="form-label-group">
+          <input formControlName="email" type="email" id="inputEmailSignUp" class="form-group form-control" placeholder="Email" required>
+        </div>
+
+        <div class="form-label-group">
+          <input formControlName="senha" type="password" id="inputPasswordSignUp" class="form-group form-control" placeholder="Senha" required>
+        </div>
+
+        <div class="form-label-group">
+          <input formControlName="telefone" type="text" id="inputPhone" class="form-group form-control" placeholder="Celular" required>
+        </div>
+
+        <button class="form-group btn btn-lg btn-primary btn-block text-uppercase" type="submit">CRIAR CONTA</button>
+      </form>
+    </div>
+  </div>
+</div>
