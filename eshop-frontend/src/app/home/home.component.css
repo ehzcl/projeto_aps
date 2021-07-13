@@ -1,0 +1,8 @@
+* {
+    margin: 1rem;
+}
+
+.btn-acoes {
+    display: flex;
+    justify-content: center;
+}
