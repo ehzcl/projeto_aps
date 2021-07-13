@@ -12,7 +12,7 @@ public class LoginController {
     @Autowired
     private Fachada fachada;
 
-    @GetMapping("/login")
+    @PostMapping("/login")
     public ResponseEntity efetuarLogin(@RequestBody Cliente cliente) {
         Cliente c = fachada.buscarCredencial(cliente.getEmail());
         if (c == null) {
