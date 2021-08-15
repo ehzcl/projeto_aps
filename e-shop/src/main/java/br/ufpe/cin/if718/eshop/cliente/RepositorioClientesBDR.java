@@ -1,6 +1,8 @@
-package br.ufpe.cin.if718.eshop.dados;
+package br.ufpe.cin.if718.eshop.cliente;
 
-import br.ufpe.cin.if718.eshop.negocio.Cliente;
+import br.ufpe.cin.if718.eshop.cliente.Cliente;
+import br.ufpe.cin.if718.eshop.cliente.ClientesDAO;
+import br.ufpe.cin.if718.eshop.cliente.IRepositorioClientes;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -8,7 +10,6 @@ import java.util.List;
 
 @Component
 public class RepositorioClientesBDR implements IRepositorioClientes {
-
     @Autowired
     private ClientesDAO repositorioClientes;
 
@@ -20,10 +21,5 @@ public class RepositorioClientesBDR implements IRepositorioClientes {
     @Override
     public Cliente existeCliente(String email) {
         return repositorioClientes.findClienteByEmail(email);
-    }
-
-    @Override
-    public List<Cliente> listarTodosClientes() {
-        return repositorioClientes.findAll();
     }
 }

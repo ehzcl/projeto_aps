@@ -1,9 +1,8 @@
-package br.ufpe.cin.if718.eshop.negocio;
+package br.ufpe.cin.if718.eshop.cliente;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.persistence.*;
 
@@ -11,12 +10,12 @@ import javax.persistence.*;
 @NoArgsConstructor
 @Data
 @Entity
-public class Carrinho {
+public class Cliente {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idCarrinho;
-    @Autowired
     private Long idCliente;
-    private Produto[] produtos;
-    private Double valorTotal;
+    private String nome;
+    private String email;
+    private String senha;
+    private String telefone;
 }

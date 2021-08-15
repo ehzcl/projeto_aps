@@ -1,6 +1,6 @@
-package br.ufpe.cin.if718.eshop.dados;
+package br.ufpe.cin.if718.eshop.cliente;
 
-import br.ufpe.cin.if718.eshop.negocio.Cliente;
+import br.ufpe.cin.if718.eshop.cliente.Cliente;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface ClientesDAO extends JpaRepository<Cliente, Long> {
