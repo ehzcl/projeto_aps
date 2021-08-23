@@ -13,18 +13,23 @@ Paulo Aragão   - pvsa
 
 ![Diagrama UML](./docs/diagrama.png)
 
-### Proposta
+### Entrega 1
 
 [Proposta de projeto](https://docs.google.com/document/d/17RXGTigwaIQsoJafAuFN54eFfRCHrjHxu_DlcEcw50U/edit?usp=sharing)
 
+### Entrega 2
 
-### Instruções para executar o código Spring Boot
+#### Correções e RUP
 
-#### 1. Baixar e instalar o Maven
-[Link do Maven](https://mirror.nbtelecom.com.br/apache/maven/maven-3/3.8.1/binaries/apache-maven-3.8.1-bin.tar.gz)
+![Arquitetura da aplicação](./docs/Arquitetura da aplicação (old).png)
 
-Depois de baixar, descompactar e colocar o caminho da pasta bin do diretório Maven no PATH da sua máquina
+##### Arquitetura corrigida
 
-#### 2. Usar o comando `mvn install` no diretório raiz do projeto Spring
+![Arquitetura da aplicacao corrigida](./docs/Arquitetura da aplicação.png)
 
-#### 3. Para executar o Spring, use `mvn spring-boot:run`
+[Mapeamento das classes de analise em elementos de projeto](https://docs.google.com/document/d/1i-lYCq-MT9uNl121jF3XeY9Z8JBGLJ_O7n3b9_RpHL8/edit?usp=sharing)
+
+[Classes de analise](./docs/classes de analise/classe de analise.md)
+
+[Diagrama de sequencia](./docs/diagramas de sequencia/diagrama de sequencia.md)
+
