@@ -10,7 +10,7 @@ public class CadastroClientes {
     @Autowired
     private IRepositorioClientes repositorioClientes;
 
-    public ResponseEntity inserirCliente(Cliente cliente) {
+    public ResponseEntity<HttpStatus> inserirCliente(Cliente cliente) {
         Cliente temp = repositorioClientes.existeCliente(cliente.getEmail());
         if (temp != null) {
             return new ResponseEntity<>(HttpStatus.CONFLICT);
@@ -19,7 +19,7 @@ public class CadastroClientes {
         return new ResponseEntity<>(HttpStatus.OK);
     }
 
-    public ResponseEntity existeCliente(String email, String senha) {
+    public ResponseEntity<HttpStatus> existeCliente(String email, String senha) {
         Cliente temp = repositorioClientes.existeCliente(email);
         if (temp == null) {
             return new ResponseEntity<>(HttpStatus.UNAUTHORIZED);

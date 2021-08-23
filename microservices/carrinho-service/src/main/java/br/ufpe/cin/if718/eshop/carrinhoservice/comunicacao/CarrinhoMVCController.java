@@ -12,6 +12,7 @@ public class CarrinhoMVCController {
     @Autowired
     private ControladorCarrinho controladorCarrinho;
 
+    @CrossOrigin(origins = "*", allowedHeaders = "*")
     @PostMapping("/carrinho/add/{id}")
     public ResponseEntity criarCarrinho(@PathVariable Long id) {
         log.info("criarCarrinho dentro de CarrinhoMVCController");
