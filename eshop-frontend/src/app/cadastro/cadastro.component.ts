@@ -41,9 +41,7 @@ export class CadastroComponent implements OnInit {
         'telefone': this.formCadastro.value.telefone,
       }
 
-      this.cadastroService.addCliente(user).subscribe(
-        () => console.log("Cliente cadastrado!")
-      );
+      this.cadastroService.addCliente(user);
 
       this.formCadastro.reset();
       this.submitted = false;

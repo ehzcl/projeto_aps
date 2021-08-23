@@ -7,13 +7,12 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/carrinho")
 @Slf4j
 public class CarrinhoMVCController {
     @Autowired
     private ControladorCarrinho controladorCarrinho;
 
-    @PostMapping("/add/{id}")
+    @PostMapping("/carrinho/add/{id}")
     public ResponseEntity criarCarrinho(@PathVariable Long id) {
         log.info("criarCarrinho dentro de CarrinhoMVCController");
         return controladorCarrinho.criarCarrinho(id);

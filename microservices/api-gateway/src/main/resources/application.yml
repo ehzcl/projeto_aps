@@ -15,7 +15,7 @@ spring:
         - id: cadastroservice
           uri: lb://cadastroservice
           predicates:
-            - Path=/cadastro/**
+            - Path=/signup/**
         - id: produtosservice
           uri: lb://produtosservice
           predicates:

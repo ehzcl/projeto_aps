@@ -12,7 +12,7 @@ export class CadastroService {
 
   constructor(private http: HttpClient) { }
 
-  public addCliente(cliente: Cliente): Observable<Cliente> {
-    return this.http.post<Cliente>(`${this.apiServerUrl}/signup`, cliente);
+  public addCliente(cliente: Cliente): void {
+    this.http.post<Cliente>(`${this.apiServerUrl}/signup`, cliente);
   }
 }
