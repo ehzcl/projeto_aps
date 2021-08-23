@@ -1,29 +1,26 @@
 server:
   port: 9191
 
+eureka:
+  client:
+    service-url:
+      defaultZone: http://serviceregistry:8761/eureka/
+
 spring:
   application:
-    name: API-GATEWAY
+    name: apigateway
   cloud:
     gateway:
       routes:
-        - id: CADASTRO-SERVICE
-          uri: lb://CADASTRO-SERVICE
+        - id: cadastroservice
+          uri: lb://cadastroservice
           predicates:
             - Path=/cadastro/**
-        - id: PRODUTOS-SERVICE
-          uri: lb://PRODUTOS-SERVICE
+        - id: produtosservice
+          uri: lb://produtosservice
           predicates:
             - Path=/produtos/**
-        - id: CARRINHO-SERVICE
-          uri: lb://CARRINHO-SERVICE
+        - id: carrinhoservice
+          uri: lb://carrinhoservice
           predicates:
             - Path=/carrinho/**
-eureka:
-  client:
-    register-with-eureka: true
-    fetch-registry: true
-    service-url:
-      defaultZone: http://eshop-service-registry:8761/eureka
-    instance:
-      hostname: localhost

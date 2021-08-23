@@ -16,9 +16,7 @@ import java.net.http.HttpResponse;
 @RequestMapping("/produtos")
 public class FachadaComunicacaoListaProdutos {
     private final String urlAPI = "https://fakestoreapi.com/products?limit=9";
-    private final HttpClient httpClient = HttpClient.newBuilder()
-            .version(HttpClient.Version.HTTP_2)
-            .build();
+    private final HttpClient httpClient = HttpClient.newBuilder().version(HttpClient.Version.HTTP_2).build();
 
     @GetMapping("")
     public Produto[] listarProdutos() throws IOException, InterruptedException {
