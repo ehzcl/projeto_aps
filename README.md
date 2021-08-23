@@ -21,15 +21,15 @@ Paulo Aragão   - pvsa
 
 #### Correções e RUP
 
-![Arquitetura da aplicação](./docs/Arquitetura da aplicação (old).png)
+![Arquitetura da aplicação](https://github.com/ehzcl/projeto_aps/blob/main/docs/Arquitetura%20da%20aplica%C3%A7%C3%A3o%20(old).png)
 
 ##### Arquitetura corrigida
 
-![Arquitetura da aplicacao corrigida](./docs/Arquitetura da aplicação.png)
+![Arquitetura da aplicacao corrigida](https://github.com/ehzcl/projeto_aps/blob/main/docs/Arquitetura%20da%20aplica%C3%A7%C3%A3o.png)
 
 [Mapeamento das classes de analise em elementos de projeto](https://docs.google.com/document/d/1i-lYCq-MT9uNl121jF3XeY9Z8JBGLJ_O7n3b9_RpHL8/edit?usp=sharing)
 
-[Classes de analise](./docs/classes de analise/classe de analise.md)
+[Classes de analise](https://github.com/ehzcl/projeto_aps/blob/main/docs/classes%20de%20analise/classe%20de%20analise.md)
 
-[Diagrama de sequencia](./docs/diagramas de sequencia/diagrama de sequencia.md)
+[Diagrama de sequencia](https://github.com/ehzcl/projeto_aps/blob/main/docs/diagramas%20de%20sequencia/diagrama%20de%20sequencia.md)
 
