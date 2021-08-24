@@ -9,22 +9,47 @@ Luan Advincula - lssa
 
 Paulo Aragão   - pvsa
 
-### Diagrama
+### Modelo de informacao de negocio
 
-![Diagrama UML](./docs/diagrama.png)
+![Arquitetura de servicos](./docs/modelo%20de%20informacao%20de%20negocio.png)
 
-### Proposta
+### Arquitetura de servicos
 
-[Proposta de projeto](https://docs.google.com/document/d/17RXGTigwaIQsoJafAuFN54eFfRCHrjHxu_DlcEcw50U/edit?usp=sharing)
+![Arquitetura de servicos](./docs/arquitetura%20de%20servicos.png)
+
+### Modelo navegacional
+
+![modelo navegacional](./docs/modelo%20navegacional.png)
+
+### Prototipo da GUI
+
+![Prototipo da GUI](./docs/prototipo_da_gui.png)
+
+### Projeto frontend
+
+![Projeto frontend](./docs/projeto_frontend.png)
+
+### Arquitetura de servicos
+
+![Arquitetura de servicos](./docs/arquitetura%20de%20servicos.png)
 
 
-### Instruções para executar o código Spring Boot
 
-#### 1. Baixar e instalar o Maven
-[Link do Maven](https://mirror.nbtelecom.com.br/apache/maven/maven-3/3.8.1/binaries/apache-maven-3.8.1-bin.tar.gz)
+### Diagrama de componentes de servico
 
-Depois de baixar, descompactar e colocar o caminho da pasta bin do diretório Maven no PATH da sua máquina
+![diagrama de componentes de servico](./docs/diagrama%20de%20componentes%20de%20servico.png)
 
-#### 2. Usar o comando `mvn install` no diretório raiz do projeto Spring
+### Diagrama de componentes do sistema
 
-#### 3. Para executar o Spring, use `mvn spring-boot:run`
+![Diagrama componentes do sistema](./docs/diagrama%20de%20componentes%20do%20sistema.png)
+
+### Casos de uso em pacotes
+
+![casos de uso em pacotes](./docs/casos%20de%20uso%20em%20pacotes.png)
+
+[componentes de acesso](./docs/componentes%20de%20acesso/componentes%20de%20acesso.md)
+
+[Modelo de interacao de servicos](./docs/modelo%20de%20interacao%20de%20servicos/modelo%20de%20interacao%20de%20servicos.md)
+
+
+
