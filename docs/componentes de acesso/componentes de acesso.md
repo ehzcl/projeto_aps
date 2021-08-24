@@ -8,7 +8,7 @@
 
 ### Subsistema controle de acesso
 
-![Subsistema controle de acesso](subsistema controle acesso.png)
+![Subsistema controle de acesso](./subsistema%20controle%20acesso.png)
 
 ### Subsistema pedidos
 
