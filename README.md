@@ -33,3 +33,5 @@ Paulo Aragão   - pvsa
 
 [Diagrama de sequencia](https://github.com/ehzcl/projeto_aps/blob/main/docs/diagramas%20de%20sequencia/diagrama%20de%20sequencia.md)
 
+[SOA](https://github.com/ehzcl/projeto_aps/tree/soa)
+
